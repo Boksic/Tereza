@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_bg"
+    android:orientation="vertical">
+
+    <ListView
+        android:scrollbarFadeDuration="0"
+        android:fadeScrollbars="false"
+        android:id="@+id/lvdata"
+        android:divider="@color/light_bg"
+        android:dividerHeight="@dimen/list_view_padding"
+        android:padding="@dimen/list_view_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

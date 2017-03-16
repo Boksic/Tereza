@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivimage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:background="@drawable/default_img" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/custom_item_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvnewstitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/title_font"
+            android:textSize="@dimen/title_font_size" />
+
+        <TextView
+            android:id="@+id/tvauthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin_top"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#848484"
+            android:textSize="@dimen/normal_font_size" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/item_margin_top"
+            android:layout_height="match_parent"
+            android:background="@color/activity_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/desc_font_color"
+                    android:textSize="@dimen/normal_font_size" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
