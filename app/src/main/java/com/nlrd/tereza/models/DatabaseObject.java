@@ -15,7 +15,7 @@ public class DatabaseObject
     public DatabaseObject(Context context)
     {
         dbHelper = new Database(context);
-        this.dbHelper.getWritableDatabase();
+        this.db = dbHelper.getWritableDatabase();
         this.db = dbHelper.getReadableDatabase();
     }
 

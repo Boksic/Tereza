@@ -60,6 +60,6 @@
     <string name="time_22pm">22h00</string>
     <string name="time_23pm">23h00</string>
     <string name="time_24pm">24h00</string>
-    <string name="birth_day">Cest mon anniv</string>
-    <string name="current_day_date">24 février, 2017</string>
+    <string name="birth_day">I am going to birthday party</string>
+    <string name="current_day_date">8 October, 2016</string>
 </resources>

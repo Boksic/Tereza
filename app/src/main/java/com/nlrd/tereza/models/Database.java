@@ -10,7 +10,7 @@ import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 public class Database extends SQLiteAssetHelper
 {
-    private static final String DATABASE_NAMES = "events.db";
+    private static final String DATABASE_NAMES = "events.db.zip";
     private static final int DATABASE_VERSION = 3;
 
     public Database(Context context)

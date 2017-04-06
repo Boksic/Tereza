@@ -38,11 +38,9 @@ public class DatabaseQuery extends DatabaseObject
         List<EventObjects> events = new ArrayList<>();
         //String query = "select name from sqlite_master where type = 'table'";
         String query = "SELECT * FROM events";
-        //String query = "INSERT INTO events ('message', 'reminder', 'end') VALUES ('Boksic', '11-01-2017 5:00', '11-01-2017 6:00')";
+        //String query = "INSERT INTO events ('message', 'reminder', 'end') VALUES ('Zack', '13-04-2017 12:00', '13-04-2017 14:00')";
 
         Cursor cursor = this.getDbConnection().rawQuery(query, null);
-
-        int count = cursor.getCount();
 
         if(cursor.moveToFirst())
         {

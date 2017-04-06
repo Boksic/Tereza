@@ -42,18 +42,18 @@ public class CalendarFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        //mQuery = new DatabaseQuery(getActivity().getApplicationContext());
-       /* mLayout = (RelativeLayout) getActivity().findViewById(R.id.left_event_column);
-        eventIndex = mLayout.getChildCount();
-        currentDate = (TextView) getActivity().findViewById(R.id.display_current_date);
-        currentDate.setText(displayDateInString(cal.getTime()));
+        View view = inflater.inflate(R.layout.fragment_calendar, container, false);
 
-        mQuery = new DatabaseQuery(getActivity().getApplicationContext());
+        mQuery = new DatabaseQuery(view.getContext().getApplicationContext());
+        mLayout = (RelativeLayout) view.findViewById(R.id.left_event_column);
+        eventIndex = mLayout.getChildCount();
+        currentDate = (TextView) view.findViewById(R.id.display_current_date);
+        currentDate.setText(displayDateInString(cal.getTime()));
 
         displayDailyEvents();
 
-        previousDay = (ImageView) getActivity().findViewById(R.id.previous_day);
-        nextDay = (ImageView) getActivity().findViewById(R.id.next_day);
+        previousDay = (ImageView) view.findViewById(R.id.previous_day);
+        nextDay = (ImageView) view.findViewById(R.id.next_day);
 
         previousDay.setOnClickListener(new View.OnClickListener()
         {
@@ -71,10 +71,10 @@ public class CalendarFragment extends Fragment
             {
                 nextCalendarDate();
             }
-        });*/
+        });
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_calendar, container, false);
+        return view;
     }
 
     private void previousCalendarDate()
